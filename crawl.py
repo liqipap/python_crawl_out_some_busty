@@ -1,13 +1,14 @@
-#import request
-import sys
+# python version 2.7
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from pymongo import MongoClient
 
-#first_arg = sys.argv[1]
+# highest page number currently is 138784,
+# better u check by dialing http://www.xvideos.com/new/200005/
+# u can see the hieghest page number
 
 
-def spide_that_page(max_pages=100):
+def spide_that_page(max_pages=138784):
     client = MongoClient('localhost:27017')
     db = client.users_of_xvideos
     page = 1
