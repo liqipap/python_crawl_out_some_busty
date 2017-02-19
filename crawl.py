@@ -9,8 +9,11 @@ from pymongo import MongoClient
 
 
 def spide_that_page(max_pages=138784):
+
+    # conncting database
     client = MongoClient('localhost:27017')
     db = client.users_of_xvideos
+
     page = 1
     while page <= max_pages:
         url = 'http://www.xvideos.com/new/' + str(page)
