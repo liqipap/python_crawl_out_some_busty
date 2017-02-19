@@ -35,4 +35,3 @@ def spide_that_page(max_pages=138784):
             db.mycollection.insert_one({"href": href, "name": title})
         page += 1
         exit
-spide_that_page()
